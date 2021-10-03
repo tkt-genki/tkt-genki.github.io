@@ -1,5 +1,71 @@
-h1 {
+body {
+  margin: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+header {
+  background: darkcyan;
+}
+
+header .container {
+  width: 420px;
+  margin: 0 auto;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+}
+
+header .container div + div {
+  margin-left: 12px;
+}
+
+header h1 {
+  font-weight: normal;
   font-size: 24px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #ddd;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+main .container {
+  width: 400px;
+  margin: 0 auto;
+}
+
+main h1 {
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 60px;
+}
+
+main h2 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+main img {
+  padding-top: 72px;
+}
+
+footer {
+  padding: 60px;
+  text-align: center;
+  color: #aaa;
+}
+
+.animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .3s, transform .3s;
+}
+
+.animate.appear {
+  opacity: 1;
+  transform: none;
 }

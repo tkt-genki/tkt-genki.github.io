@@ -1,71 +1,61 @@
-body {
-  margin: 0;
-}
-
-img {
-  vertical-align: bottom;
-}
-
-header {
-  background: darkcyan;
-}
-
-header .container {
-  width: 420px;
-  margin: 0 auto;
-  padding: 32px;
-  display: flex;
-  align-items: center;
-}
-
-header .container div + div {
-  margin-left: 12px;
-}
-
-header h1 {
-  font-weight: normal;
-  font-size: 24px;
-}
-
-h1,
-p {
-  margin: 0;
-}
-
-main .container {
-  width: 400px;
-  margin: 0 auto;
-}
-
-main h1 {
-  font-size: 24px;
-  font-weight: normal;
+.header {
   text-align: center;
-  padding-top: 60px;
 }
 
-main h2 {
-  font-size: 24px;
-  font-weight: normal;
+body {
+  background-color: #ddd;
 }
 
-main img {
-  padding-top: 72px;
+.menu {
+  background-color:black;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.side {
+  background-color: black;
+  color: white;
+  width: 100px;
+  /* height: 300px; */
+  text-align: center;
+  margin-left: 10px;
+  flex-grow: 1;
+}
+
+.side a:visited {
+  color: deeppink
+}
+
+.content {
+  background-color: black;
+  color: white;
+  width: 100px;
+  /* height: 300px; */
+  text-align: center;
+  flex-grow: 3;
+}
+
+.content a:visited {
+  color: deeppink;
+}
+
+ul {
+  text-align: left;
+}
+
+article {
+  display: flex;
+  padding-top: 30px;
+}
+
+.container {
+  text-align: center;  
 }
 
 footer {
-  padding: 60px;
+  margin-top: 30px;
+  line-height: 80px;
   text-align: center;
-  color: #aaa;
-}
-
-.animate {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity .3s, transform .3s;
-}
-
-.animate.appear {
-  opacity: 1;
-  transform: none;
 }
